@@ -5,40 +5,24 @@
 <!-- @@meta -->
 
 <!-- @content -->
-<main class="p-top">
-  <section class="c-mainvisual">
-    <div class="c-mainvisual__inner">
-      <h2>LOREM IPSUM</h2>
-      <p>In volutpat metus quis velit malesuada</p>
-      <a href="<%= BASE_URL %>about.html" class="c-btn1">JOIN NOW</a>
-    </div>
-  </section>
+<div class="p-home">
+   
+            <div class="c-brand">
+                <div class="c-brand__list">
+                    <% if(typeof brands != 'undefined') { %>
+                        <% brands.imgs && brands.imgs.forEach(item => { %>
+                    <a class="c-brand__item">
+                        <img src="<%= item.img %>" alt="<%= item.alt %>">
+                    </a>
+                    <% }) %>
+                    <% } %>
+                </div>
+            </div>
+     
+</div>
 
-  <section class="p-top1">
-    <div class="l-container">
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-        <br>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-        dolorem eaque minima deleniti dicta doloremque ut, officiis odit tempora
-        culpa mollitia ipsa quas quibusdam. Voluptate illo nam delectus
-        reprehenderit laborum?
-      </p>
-    </div>
-  </section>
-</main>
 <!-- @@content -->
 
 <!-- @script -->
-<script>
-  console.log("home page");
-</script>
+
 <!-- @@script -->

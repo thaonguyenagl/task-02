@@ -10,20 +10,21 @@
 }
 /* Main menu
 ------------------------------------------------------------*/
-.c-gnav {
-    ul {
+.c-header {
+    &__menulist {
+        display: flex;
+        flex-direction: column;
     }
 
-    li {
-        display: inline-block;
-
-        + li {
-            margin-left: 20px;
-        }
-    }
-
-    a {
+    &__menuitem {
         font-size: 1.6rem;
-        text-transform: capitalize;
+        line-height: 2;
+        letter-spacing: 0.1;
+        padding-left: 10px;
+        margin-bottom: 10px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
 }

@@ -20,5 +20,26 @@
         ]
       }
     ]
+  },
+  "brands" : {
+    "imgs":[
+    {
+      "img" : "./assets/img/brand/amazon.png",
+      "alt" : "amazon"
+    },
+    {
+      "img" : "./assets/img/brand/hedgehog.png",
+      "alt" : "hedgehog"
+    },
+    {
+      "img" : "./assets/img/brand/kenko.png",
+      "alt" : "kenko"
+
+    },
+    {
+      "img" : "./assets/img/brand/lohaco.png",
+      "alt" : "lohaco"
+    }
+  ]
   }
 }
