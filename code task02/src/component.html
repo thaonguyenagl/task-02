@@ -5,32 +5,33 @@
 <!-- @@meta -->
 
 <!-- @content -->
-<a href="#" class=" c-btn--second">
-    ハッカ？ミント？
-</a>
+
 <!-- ANCHOR  banner  -->
 
  <!-- ANCHOR fix ul li -->
-    <ul class="c-header__menulist">
-        <li class="c-btn--primary  c-header__menuitem">
-            トップ
-        </li>
-        <li class=" c-btn--primary c-header__menuitem">
-            毎日にハッカ油
-        </li>
-        <li class=" c-btn--primary c-header__menuitem">
-            製品情報
-        </li>
-        <li class=" c-btn--primary c-header__menuitem">
-            Q&A
-        </li>
-
-        <li class=" c-btn--primary c-header__menuitem">
-            ハッカ油コラム
-        </li>
-        <li class=" c-btn--primary c-header__menuitem">
-            ハッカ油ムービー
-        </li>
-    </ul>
-
+ 
 <!-- @@content -->
+<section class="c-brand">
+    <div class="c-brand__list">
+      <% if(typeof brands != 'undefined') { %> <% brands.imgs &&
+      brands.imgs.forEach(item => { %>
+      <a class="c-brand__item">
+        <img src="<%= item.img %>" alt="<%= item.alt %>" class="img-fluid" >
+      </a>
+      <% }) %> <% } %>
+    </div>
+  </section>
+  <seciton class="c-point1">
+    <div class="c-point__list">
+        <div class="c-ponit__item">
+            <div class="c-point__img">          
+                
+                <img src="./assets/img/point/point1/img-1.jpg" alt="" class="img-fluid">
+
+                </div>
+            </div>
+            
+        </div>
+
+    </seciton>
+  

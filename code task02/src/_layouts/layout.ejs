@@ -13,14 +13,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap" rel="stylesheet">
 
     {{ head }}
-  </head>
+</head>
   <body>
-
-    <%- include('_partials/header'); -%>
-
-    {{ content }}
-
-    <%- include('_partials/footer'); -%>
+    <div class="c-wrapper">
+      
+        <%- include('_partials/header'); -%>
+  
+        {{ content }}
+    
+        <%- include('_partials/footer'); -%>
+      
+    </div>
+ 
+  
 
     {{ script }}
     <script src="/assets/js/main.js"></script>
